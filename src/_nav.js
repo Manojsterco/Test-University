@@ -55,6 +55,16 @@ const _nav = [
         name: 'View Home Banner',
         to: '/viewhomebanner',
       },
+      {
+        component: CNavItem,
+        name: 'Add Popup Banner',
+        to: '/addpopupbanner',
+      },
+      {
+        component: CNavItem,
+        name: 'View Popup Banner',
+        to: '/viewpopupnbanner',
+      },
       // {
       //   component: CNavItem,
       //   name: 'CoreUI Brands',

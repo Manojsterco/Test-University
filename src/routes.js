@@ -2,9 +2,11 @@ import { element } from 'prop-types'
 import React from 'react'
 // import AddHomeBanner from './views/dashboard/AddHomeBanner'
 import ViewBanner from './views/dashboard/ViewBanner'
+import AddPopUpBanner from './views/dashboard/AddPopUpBanner'
+import ViewPopupBanner from './views/dashboard/ViewPopupBanner'
 
-const Dashboard = React.lazy(() => import('./views/dashboard/Dashboard'))
-const HomeBanner = React.lazy(() => import('./views/dashboard/HomeBanner'))
+// const Dashboard = React.lazy(() => import('./views/dashboard/Dashboard'))
+// const HomeBanner = React.lazy(() => import('./views/dashboard/HomeBanner'))
 const AddHomeBanner = React.lazy(() => import('./views/dashboard/AddHomeBanner'))
 const Colors = React.lazy(() => import('./views/theme/colors/Colors'))
 const Typography = React.lazy(() => import('./views/theme/typography/Typography'))
@@ -62,6 +64,8 @@ const routes = [
   // { path: '/homepage', name: 'HomeBanner', element: HomeBanner},
   { path: '/addhomebanner', name: 'AddHomeBanner', element: AddHomeBanner},
   { path: '/viewhomebanner', name: 'ViewBanner', element: ViewBanner},
+  { path: '/addpopupbanner', name: 'AddPopUpBanner', element: AddPopUpBanner},
+  { path: '/viewpopupnbanner', name: 'ViewPopupBanner', element: ViewPopupBanner},
   { path: '/theme', name: 'Theme', element: Colors, exact: true },
   { path: '/theme/colors', name: 'Colors', element: Colors },
   { path: '/theme/typography', name: 'Typography', element: Typography },
