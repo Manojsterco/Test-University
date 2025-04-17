@@ -1,8 +1,10 @@
 import React from "react";
 import { CTable, CTableHead, CTableRow, CTableHeaderCell, CTableBody, CTableDataCell, CFormSelect, CFormInput,CButton } from "@coreui/react";
 
-
 function AddHomeBanner() {
+
+    
+
     return (
         <>
             <h5>Add Home Banner</h5>
