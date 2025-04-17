@@ -57,9 +57,6 @@ function ViewBanner() {
                        
                           ))
                     }
-
-
-
                 </CTableBody>
             </CTable>
 
