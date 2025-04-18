@@ -7,13 +7,13 @@ import { FaPenSquare,FaRegTrashAlt,FaCheck } from "react-icons/fa";
 
 function ViewBanner() {
 
-    const [product, setProduct] = useState([]);
+    const [data, setData] = useState([]);
 
     useEffect(() => {
         async function fetchProducts() {
             const response = await fetch(`http://localhost:4000/api/banners`);
             const data = await response.json();
-            setProduct(data);
+            setData(data);
 
         }
         fetchProducts();
@@ -41,7 +41,7 @@ function ViewBanner() {
                 </CTableHead>
                 <CTableBody>
                     {
-                        product.map((item,i) => (
+                        data.map((item,i) => (
                      
                             <CTableRow key={i}>
                                 <CTableHeaderCell scope="col">{item.id}</CTableHeaderCell>
