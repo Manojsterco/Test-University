@@ -20,7 +20,7 @@ function AddHomeBanner() {
     function saveData(){
         console.warn({Type,Title,TagLine,ButtonText,UploadBanner,MobileBanner,UrlLink});
         let data={Type,Title,TagLine,ButtonText,UploadBanner,MobileBanner,UrlLink};
-        fetch("http://localhost:4000/api/banners",{
+        fetch("http://localhost:4000/api/createbanners",{
             method:'POST',
             headers:{
                 'Accept':'application/json',

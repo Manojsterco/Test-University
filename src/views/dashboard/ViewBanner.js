@@ -46,7 +46,7 @@ function ViewBanner() {
                             <CTableRow key={i}>
                                 <CTableHeaderCell scope="col">{item.id}</CTableHeaderCell>
                                 <CTableHeaderCell scope="col">{item.type}</CTableHeaderCell>
-                                <CTableHeaderCell scope="col">{item.tag_line}</CTableHeaderCell>
+                                <CTableHeaderCell scope="col"><img src={item.upload_banner} /></CTableHeaderCell>
                                 <CTableHeaderCell scope="col">{item.title}</CTableHeaderCell>
                                 <CTableHeaderCell scope="col">{item.created_at}</CTableHeaderCell>
 
